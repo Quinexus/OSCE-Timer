@@ -59,7 +59,7 @@ def run_station(station_num: int, total_stations: int) -> None:
 
 
 def get_positive_int(prompt: str, default: int) -> int:
-    raw = input(f"{prompt} [{default}]: ").strip()
+    raw = input(f"4{prompt} [{default}]: ").strip()
     if not raw:
         return default
     value = int(raw)
