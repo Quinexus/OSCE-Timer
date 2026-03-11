@@ -4,7 +4,7 @@ import time
 
 # OSCE timings in seconds
 PHASES = [
-    ("Reading time", 60, "Reading time begins now."),
+    ("Reading time", 60, "Reeding time begins now."),
     ("Doing time", 13 * 60, "Doing time begins now."),
     ("Final minute", 60, "One minute remaining."),
     ("Feedback", 3 * 60, "Feedback time begins now."),
@@ -59,7 +59,7 @@ def run_station(station_num: int, total_stations: int) -> None:
 
 
 def get_positive_int(prompt: str, default: int) -> int:
-    raw = input(f"4{prompt} [{default}]: ").strip()
+    raw = input(f"{prompt} [{default}]: ").strip()
     if not raw:
         return default
     value = int(raw)
